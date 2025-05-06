@@ -1,0 +1,34 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Vi Phạm Giao Thông</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Danh sách xe vi phạm</h1>
+
+  <div class="filter">
+    <input type="number" id="yearInput" placeholder="Năm (VD: 2025)" />
+    <input type="number" id="monthInput" placeholder="Tháng (1-12)" />
+    <input type="date" id="dateInput" />
+    <button onclick="resetFilters()">Đặt lại</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr><th>Mã</th><th>Thời gian</th><th>Tốc độ (km/h)</th></tr>
+    </thead>
+    <tbody id="violationTable"></tbody>
+  </table>
+
+  <canvas id="violationChart" height="100"></canvas>
+
+  <script src="main.js"></script>
+</body>
+</html>
