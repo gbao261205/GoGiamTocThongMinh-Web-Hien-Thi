@@ -1,12 +1,6 @@
 // main.js
 const firebaseConfig = {
-  apiKey: "AIzaSyDQDsu2PYzKcSgxAoQsfOTVVaDSeT9MhAE",
-  authDomain: "gogiamtoc-7f85e.firebaseapp.com",
-  projectId: "gogiamtoc-7f85e",
-  storageBucket: "gogiamtoc-7f85e.firebasestorage.app",
-  messagingSenderId: "725651689818",
-  appId: "1:725651689818:web:8523c9ac0b4b990e00e363",
-  measurementId: "G-THME4FQKRY"
+
 };
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
